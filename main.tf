@@ -1,3 +1,14 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-backend-devopscareers"
+    key = "statefile/terraform.tfstate"
+    #encrypt = true
+    #kms_key_id = "REDACTED"
+    region = "us-east-1"
+    use_lockfile = true #newly introduced attribute for statelocking
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
