@@ -5,7 +5,8 @@ terraform {
     encrypt = true
     #kms_key_id = "REDACTED"
     region = "us-east-1"
-    use_lockfile = true #newly introduced attribute for statelocking
+    dynamodb_table = "terraform-lock"
+    #use_lockfile = true #newly introduced attribute for statelocking
   }
 }
 
