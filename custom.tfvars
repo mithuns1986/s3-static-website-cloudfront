@@ -2,7 +2,7 @@
 environment = "dev"
 
 # Landing page domain
-domain = "devopscareers.site"
+domain = "devopscareer.site"
 
 # Route 53 Hosted Zone ID
-route53_zone_id = "XXXXXXXXXXXXXXXXXXX"
+route53_zone_id = "Z01818443D1UBO3NWR5NI"
